@@ -1,9 +1,6 @@
-package com.github.ejkang.clonecoding.travelsapi.controller;
+package io.github.mariazevedo88.travelsapi.controller;
 
 import java.util.List;
-
-import com.github.ejkang.clonecoding.travelsapi.model.ClonedTravel;
-import com.github.ejkang.clonecoding.travelsapi.service.ClonedTravelService;
 
 import org.apache.log4j.Logger;
 import org.json.simple.JSONObject;
@@ -18,6 +15,9 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.RestController;
+
+import io.github.mariazevedo88.travelsapi.model.ClonedTravel;
+import io.github.mariazevedo88.travelsapi.service.ClonedTravelService;
 
 @RestController
 @RequestMapping("/api-travels/cloned/travels")
