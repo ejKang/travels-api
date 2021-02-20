@@ -8,10 +8,14 @@ public class ClTravelFactoryImpl implements ClTravelFactory {
 
     @Override
     public ClonedTravel createTravel(String type) {
+        
         if (ClTravelTypeEnum.ONE_WAY.getValue().equals(type)) {
             return new ClonedTravel(ClTravelTypeEnum.ONE_WAY);
+        } else if ( ClTravelTypeEnum.MULTI_CITY.getValue().equals(type)) {
+            return new ClonedTravel(ClTravelTypeEnum.MULTI_CITY);
         }
-        return null;
+
+        return new ClonedTravel(ClTravelTypeEnum.RETURN);
     }
     
 }
